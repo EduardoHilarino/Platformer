@@ -6,8 +6,8 @@
   "name":"Obj_Solid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Map",
-    "path":"folders/Objects/Map.yy",
+    "name":"Map Construction",
+    "path":"folders/Objects/Map/Map Construction.yy",
   },
   "parentObjectId":null,
   "persistent":false,

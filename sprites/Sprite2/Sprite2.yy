@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Platformer game",
-    "path":"Platformer game.yyp",
+    "name":"Extra",
+    "path":"folders/Extra.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

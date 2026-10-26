@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Platformer game",
-    "path":"Platformer game.yyp",
+    "name":"TilesSet Sprites",
+    "path":"folders/TilesSet/TilesSet Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -9,8 +9,8 @@
   "name":"Obj_checkpoint",
   "overriddenProperties":[],
   "parent":{
-    "name":"Map",
-    "path":"folders/Objects/Map.yy",
+    "name":"Map Construction",
+    "path":"folders/Objects/Map/Map Construction.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_Checkpoint",
-    "path":"sprites/Spr_Checkpoint/Spr_Checkpoint.yy",
+    "name":"Spr_Checkpoint_off",
+    "path":"sprites/Spr_Checkpoint_off/Spr_Checkpoint_off.yy",
   },
   "spriteMaskId":null,
   "visible":true,

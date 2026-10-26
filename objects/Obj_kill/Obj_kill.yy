@@ -8,8 +8,8 @@
   "name":"Obj_kill",
   "overriddenProperties":[],
   "parent":{
-    "name":"Map",
-    "path":"folders/Objects/Map.yy",
+    "name":"Map Construction",
+    "path":"folders/Objects/Map/Map Construction.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_kill",
-    "path":"sprites/Spr_kill/Spr_kill.yy",
+    "name":"Sprite16",
+    "path":"sprites/Sprite16/Sprite16.yy",
   },
   "spriteMaskId":null,
   "visible":true,
