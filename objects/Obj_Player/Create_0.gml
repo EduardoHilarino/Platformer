@@ -81,3 +81,38 @@
 	
 // ** Win **
 	win = false;
+	
+	
+	// ============================================================
+// PLAYER - CREATE
+// ATTACHED LIGHT
+// ============================================================
+
+// ** Create Player Light **
+player_light = instance_create_layer(
+    x,
+    y,
+    "Instances_Lighting",
+    Obj_LightSource
+);
+
+// ** Follow Player **
+player_light.light_follow = id;
+
+// ** Light Offset **
+player_light.light_offset_x = 0;
+player_light.light_offset_y = -4;
+
+// ** Light Settings **
+player_light.light_radius = 45;
+player_light.light_intensity = 0.12;
+
+player_light.light_color = make_color_rgb(
+    180,
+    210,
+    255
+);
+
+// ** Soft Light **
+player_light.light_falloff = 1.5;
+player_light.light_core_size = 0.12;

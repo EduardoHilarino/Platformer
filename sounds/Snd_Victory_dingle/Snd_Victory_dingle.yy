@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":3.082449,
   "exportDir":"",
   "name":"Snd_Victory_dingle",
   "parent":{
