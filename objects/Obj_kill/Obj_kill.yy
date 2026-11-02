@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite16",
-    "path":"sprites/Sprite16/Sprite16.yy",
+    "name":"Spr_kill",
+    "path":"sprites/Spr_kill/Spr_kill.yy",
   },
   "spriteMaskId":null,
   "visible":true,

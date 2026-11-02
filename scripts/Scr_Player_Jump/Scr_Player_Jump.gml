@@ -8,7 +8,7 @@ function Scr_Player_Jump() {
 
     grounded = false;
 
-    audio_play_sound(Snd_jump, 0, false, 0.1, 0, random_range(0.9, 1.1));
+    audio_play_sound(Snd_jump, 0, false, 0.3, 0, random_range(0.9, 1.1));
 
     Scr_Player_ChangeState(PlayerState.JUMP);
 }

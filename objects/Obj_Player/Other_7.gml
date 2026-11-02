@@ -19,7 +19,7 @@ if (state == PlayerState.TURN && sprite_index == Spr_Player_turn) {
 // Death Animation
 if (state == PlayerState.DEATH && sprite_index == Spr_Player_death) {
     Scr_Player_respawn();
-	audio_play_sound(Snd_revive,  0 ,0, 0.1, 0, random_range(0.7, 2))
+	audio_play_sound(Snd_revive,  0 ,0, 0.3, 0, random_range(0.7, 2))
     is_dead = false;
     is_turning = false;
 

@@ -10,5 +10,5 @@
 	 
 	 show_debug_message("Checkpoint Actived")
 	 sprite_index  = Spr_Checkpoint_on;
-	 audio_play_sound(Snd_Checkpoint, 0, 0, 0.2, 0,random_range(0.75, 1.25))
+	 audio_play_sound(Snd_Checkpoint, 0, 0, 0.4, 0,random_range(0.75, 1.25))
  }

@@ -1,8 +1,7 @@
 // ** Dash **
-	vel_dash = 4;
-	dash_duration = 8;
+	vel_dash = 4.8;
+	dash_duration = 9;
 	tempo_dash = 0;
-
 	dashed = false;
 
 // ** Dash Control **
@@ -14,18 +13,18 @@
 	hsp = 0;
 	max_hsp = 1.8;
 
-	acceleration = 0.10;
-	deceleration = 0.055;
-	turn_acceleration = 0.22;
+	acceleration = 0.40;
+	deceleration = 0.45;
+	turn_acceleration = 0.55;
 
 // ** Vertical Movement **
 	vsp = 0;
 
-	jump_speed = -4.2;
-	gravity_up = 0.24;
-	gravity_down = 0.36;
-	gravity_cut = 0.60;
-	max_fall_speed = 4.5;
+	jump_speed = -3.6;
+	gravity_up = 0.20;
+	gravity_down = 0.30;
+	gravity_cut = 0.65;
+	max_fall_speed = 3.2;
 
 // ** Coyote Time **
 	coyote_frames = 6;
@@ -68,51 +67,32 @@
 // ** Checkpoint **
 	respawn_x = x;
 	respawn_y = y;
-	
+
 // ** Collision Mask **
 	mask_index = Spr_player_Idle;
-	
+
 // ** Camera **
 	if (!instance_exists(obj_player_pixel))
 	{
-		instance_create_layer(x, y, "Camera", obj_player_pixel);
-	
+	    instance_create_layer(x, y, "Camera", obj_player_pixel);
 	}
-	
+
 // ** Win **
 	win = false;
-	
-	
-	// ============================================================
-// PLAYER - CREATE
-// ATTACHED LIGHT
-// ============================================================
 
-// ** Create Player Light **
-player_light = instance_create_layer(
-    x,
-    y,
-    "Instances_Lighting",
-    Obj_LightSource
-);
+// ** Wall Jump System **
+	wall_dir = 0;
+	last_wall_dir = 0;
 
-// ** Follow Player **
-player_light.light_follow = id;
+	wall_coyote_frames = 6;
+	wall_coyote_timer = 0;
 
-// ** Light Offset **
-player_light.light_offset_x = 0;
-player_light.light_offset_y = -4;
+	wall_jump_hsp = 2.6;
+	wall_jump_vsp = jump_speed;
 
-// ** Light Settings **
-player_light.light_radius = 45;
-player_light.light_intensity = 0.12;
+	wall_jump_lock_frames = 6;
+	wall_jump_lock_timer = 0;
 
-player_light.light_color = make_color_rgb(
-    180,
-    210,
-    255
-);
-
-// ** Soft Light **
-player_light.light_falloff = 1.5;
-player_light.light_core_size = 0.12;
+// ** Wall Slide **
+	wall_slide_speed = 0.7;
+	wall_sliding = false;

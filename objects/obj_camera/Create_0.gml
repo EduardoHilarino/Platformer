@@ -1,5 +1,7 @@
  // Setar as variaveis
-
+	
+	window_set_fullscreen(true);
+	
 	// Administra a camera
 	cam = view_camera[0];
 	follow = Obj_Player;

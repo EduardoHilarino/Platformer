@@ -1,0 +1,55 @@
+// ============================================================
+// DASH PARTICLES
+// ============================================================
+
+// ** Create Dash Particle Burst **
+repeat (10)
+{
+    // ** Random Spawn Offset **
+    var _px = x + random_range(-5, 5);
+    var _py = y + random_range(-5, 5);
+
+    // ** Create Particle **
+    var _particle = instance_create_layer(
+        _px,
+        _py,
+        "Entitys",
+        Obj_Particle
+    );
+
+    // ** Particle Type **
+    _particle.particle_type = 1;
+
+    // ** Random Spread **
+    var _spread = random_range(-1.2, 1.2);
+    var _speed = random_range(0.8, 2);
+
+    // ** Move Opposite To Dash **
+    _particle.hsp =
+        -dash_dir_x * _speed
+        + (-dash_dir_y * _spread);
+
+    _particle.vsp =
+        -dash_dir_y * _speed
+        + (dash_dir_x * _spread);
+
+    // ** Lifetime **
+    _particle.life = irandom_range(10, 20);
+    _particle.max_life = _particle.life;
+
+    // ** Appearance **
+    _particle.particle_color = c_white;
+    _particle.particle_alpha = 1;
+
+    // ** Slow Down **
+    _particle.friction_amount = 0.88;
+}
+
+
+
+STEP DO PLAYER!!!!!!! DEPOIS DE DEFINIR O  
+dash_dir_x = _input_x / _length;
+dash_dir_y = _input_y / _length;
+
+
+IMPORTANTE TAAAAAAAAAAAAAAAAAAAAA????!!!!

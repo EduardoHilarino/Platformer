@@ -32,4 +32,13 @@ function Scr_Player_respawn(){
 	is_turning = false;
 	last_move = 0;
 	turn_grace_timer = 0;
+	
+	// Reset wall jump/slide
+	wall_dir = 0;
+	last_wall_dir = 0;
+
+	wall_coyote_timer = 0;
+	wall_jump_lock_timer = 0;
+
+	wall_sliding = false;
 }
